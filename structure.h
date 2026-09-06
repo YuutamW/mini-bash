@@ -20,11 +20,13 @@ int print_prompt(int out_fd,const char* prompt, size_t prompt_size);
 
 /**Read Input: will read the input from the input file discriptor, 
  * loaded directly to the passed buffer without unnecessary copying
- *  
+ * Returns size of the input read.
  */
-int read_input(int in_fd, char const* input_buf, int in_buf_size);
+int read_input(int in_fd, char * input_buf, int in_buf_size);
 
-
+/** parse_input: This function is responsible for parsing the input from the user and tokenizing the 
+ *  input 
+ */
 
 
 #endif
